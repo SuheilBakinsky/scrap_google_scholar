@@ -1,0 +1,30 @@
+[project]
+name = "scrap-google-scholar"
+version = "0.0.1"
+description = "Search academic databases and summarize papers with Gemini"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "ScholarScraper Team", email = "support@scholarscraper.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "arxiv==1.4.8",
+    "pytest==7.4.0",
+    "python-dotenv==1.0.0",
+    "requests==2.31.0",
+    "rich>=14.0.0",
+    "sentence-transformers==4.1.0",
+    "tqdm==4.66.1",
+    "types-requests==2.31.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
